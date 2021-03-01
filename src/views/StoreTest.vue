@@ -10,7 +10,6 @@ export default {
       if (this.$store.getters.getTestData.length == 0) {
         this.$store.dispatch('asyncGetData')
       }
-      // console.log(this.$store.getTestData)
       return this.$store.state.testData
     }
   },

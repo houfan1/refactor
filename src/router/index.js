@@ -23,6 +23,12 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/GetStoreData.vue')
+  },
+  {
+    path: '/ApiTest',
+    name: 'ApiTest',
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/ApiTest.vue')
   }
 ]
 
